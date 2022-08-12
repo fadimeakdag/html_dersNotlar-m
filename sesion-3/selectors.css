@@ -1,0 +1,43 @@
+/* Grup Seçiciler*/
+div{
+/* div{ border: 2px solid red; */
+}
+
+/* div p leri al */
+div p {
+    border: 2px solid red;
+
+}
+/* contaner içindeki div */
+.container div p{
+    background-color: aqua;
+}
+/* p den sonra gelen div */
+p + div{
+    background-color: blueviolet;
+}
+/* atribute selectör*/
+p[title="baslık1"]{
+    background-color: crimson;
+}
+p[title="baslık2"]{
+    background-color: olive;
+}
+
+h1[title="baslık3"]{
+    background-color: darkgoldenrod;
+}
+/*bütün p lerin ilk harfreri büyüdü*/
+p::first-letter {
+    font-size: 2rem;
+
+}
+/*ilk satırlar italik ve bold*/
+p::first-line{
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/* #id
+.class */

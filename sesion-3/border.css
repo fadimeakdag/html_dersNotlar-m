@@ -1,0 +1,27 @@
+.p1{
+    border-width: 3px 10px 20px 15px;
+    border-style: solid;
+    border-color: blue aquamarine chartreuse;
+}
+.p2{
+    border:  5px dashed red;
+}
+.p3{
+    border: 10px solid greenyellow;
+    border-radius: 20px;
+    width: 110px;
+    height: 110px;
+}
+.p4{
+    border: 10px solid greenyellow;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    background-color: aqua;
+}
+.p5{ border: 20px double grey;
+
+}
+.p6{
+    border: 15px groove orange;
+}
