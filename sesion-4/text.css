@@ -1,0 +1,59 @@
+h2{
+    text-align: center;
+}
+
+#par1{
+    color: blue;
+    text-align: center;
+    text-transform: capitalize;
+   /* harfleri sağdan sola yapar*/
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    text-shadow: 3px 3px 5px blue;
+    column-count: 3;
+    /* -webkit- veya -moz-colmun- yazarsan yukarıdaki çalışmazsa yaparsın*/
+    column-rule: 3px solid yellow;
+    
+}
+#par2{
+    color: rgba(255, 0, 0,1);
+    text-align: right;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 5px blue;
+    
+}
+#par3{
+    color: #85F466;
+    text-align: justify;
+    text-transform: lowercase;
+    line-height: 2rem;
+}
+
+#par4{
+    color: hsl(0, 100%, 50%);
+    text-decoration: line-through dashed 5px blue;
+   
+   
+    
+}
+#par5{
+    color: fuchsia;
+    text-decoration:underline ;
+    letter-spacing: 10px;
+  
+
+    
+}
+#par6{
+    color: darkolivegreen;
+    /* text-decoration: overline wavy burlywood; */
+    text-indent: 2rem;
+    word-spacing: 1rem;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+#span1{
+    text-decoration: line-through ;
+    color: aqua;
+}

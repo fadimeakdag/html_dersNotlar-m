@@ -1,0 +1,46 @@
+body{
+    padding: 50px;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+
+a{
+    border: 1px solid red;
+    padding: 5px;
+    /* margin: 10px;
+    margin-top: 50px; */
+   /*inline element bunlar bu yüzden yukardan aşağıdan margin alamz sağdan soldan alır sadece inline olduğu için*/ 
+   text-decoration: none; 
+   /*alt çizgiler kalkar*/
+   margin-right: 5px;
+
+   background-color: rgb(132, 184, 11);
+   border-radius: 20px;
+   color: aqua;
+   font-size: 1.5rem;
+   /*büyüklüğü iç dış */
+}
+
+a:hover{
+    background-color:gray;
+    /* mause link üzerine gelince renk beyaz olur*/
+    color: white;
+    
+}
+
+a:visited{
+    color: red;
+}
+/* ziyaret sonrası kırmızı olacak*/
+/*about ziyaret edilmediği için rengi değişmedi*/
+
+a:active{
+    background-color: blue;
+}
+/* tıkladığında mavi oluyor*/
+/* 
+.box{
+    display: flex;
+    flex-direction: column; */
+}
