@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
 }
@@ -51,4 +52,59 @@ body{
 }
 .div10{
     font-size: 3rem;
+=======
+*{
+    margin: 0;
+}
+
+html{
+    font-size: 10px;/*1 rem = 10px oldu demek*/
+}
+
+body{
+    height: 100vh;
+}
+
+
+
+.abs{
+    background-color: aqua;
+    width: 10cm;
+}
+
+.div2{
+    background-color: chocolate;
+    width: 50%;
+    height: 50%;
+}
+
+.div3{
+    background-color: yellow;
+    width: 50%;
+    height: 30%;/*çalışmaz bodye height 100vh verirsen çalışır*/
+}
+
+.div4{
+    background-color: magenta;
+    width: 50vw;
+}
+
+.div5{
+    font-size: 1em; /*16px*/
+}
+.div6{
+    font-size: 2em;/*32px*/
+}
+.div7{
+    font-size: 0.5em;/* 3em yaparsak 96px bağilılık geçerli yine 0.5 em de 1.ci ile aynı olur*/
+}
+.div8{
+    font-size: 1rem;
+}
+.div9{
+    font-size: 2rem;
+}
+.div10{
+    font-size: 3rem;
+>>>>>>> 5f4856af8add2005fc9e19e28a7e5454ddb93044
 } 
