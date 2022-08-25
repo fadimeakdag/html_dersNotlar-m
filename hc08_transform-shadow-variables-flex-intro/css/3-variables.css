@@ -1,7 +1,7 @@
-@import "theme.css";
+@import "theme.css"; /*theme css den çekmek için importla bağladık oradaki kodları alabilmek için*/
 
 body {
-  font-family: var(--ff-open-sans);
+  font-family: var(--ff-open-sans);/**/var(--ve verdiğin kod la ff-open-sans)
 }
 
 h1 {
