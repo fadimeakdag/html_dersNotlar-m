@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+/*gogle fonttan aldık
 
 /* font-family: 'DynaPuff', cursive;
 font-family: 'Nunito', sans-serif;
 font-family: 'Open Sans', sans-serif; */
-
+/*hsl de ilk ana renk 3 ana rengvin tonları tema oluştururken hsl mantıklı*/
 :root {
   --mavi1: hsl(205, 100%, 30%);
   --mavi2: hsl(205, 100%, 40%);
