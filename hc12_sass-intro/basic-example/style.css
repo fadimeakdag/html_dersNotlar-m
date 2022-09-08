@@ -39,8 +39,10 @@ header a {
 }
 
 .banner {
-  display: flex;
-  justify-content: space-between;
+  display: flex; 
+  /* iki konteıner i yan yana koymak için */
+  justify-content: space-between; 
+  /*ve taşıyıcıları sola sağa daya deriz ve oluşur*/ 
   align-items: center;
   background-color: hotpink;
   padding: 1rem;

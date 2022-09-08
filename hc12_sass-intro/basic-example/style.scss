@@ -7,7 +7,7 @@
 //********************************************/
 //* Variable Declaration
 //********************************************/
-$bgColor: pink;
+$bgColor: pink;/*değişken oluşturma*/
 $fontSize: 1.2rem;
 $fontColor: white;
 $navBgColor: #30a7c3;
@@ -28,10 +28,10 @@ body {
 //*******  HEADER *********/
 header {
   background-color: $navBgColor;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
+  display: flex;/*header a veriyoruz çünkü nav ve div in taşıyıcı old için ve bunlar yan yana gelsin diyoruz burası ile*/
+  justify-content: space-between;/*sağa sola daya div ve nav ı yatay hizalama display flexde*/
+  align-items: center;/*dikey hizalama display flex de*/
+  padding: 1rem; /**/
   img {
     width: 80px;
     border: $myBorder;
@@ -40,7 +40,7 @@ header {
   ul {
     list-style-type: none;
     li {
-      display: inline-block;
+      display: inline-block;/*yan yana gelen linkler*/
       padding: 0.5rem;
       //! içinde bulundğumuz elementi refere etmek için & işareti kullanılır.
       &:hover {
