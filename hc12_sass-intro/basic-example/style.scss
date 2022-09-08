@@ -58,10 +58,10 @@ header {
 .banner {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center;/*yazı ortalaması*/
   background-color: $bannerBgColor;
   padding: 1rem;
-  line-height: 2rem;
+  line-height: 2rem;/*yazı aralarını acma*/
   aside {
     button {
       padding: 0.5rem;
@@ -72,13 +72,13 @@ header {
       margin-right: 0.5rem;
       &:hover {
         background-color: pink;
-        cursor: pointer;
+        cursor: pointer;/*buton üzerine gelindiğinde*/
       }
     }
   }
   img {
     width: 30%;
-    min-width: 250px;
+    min-width: 250px;/*resmin çok büyüyüp küçülmesini engellemek için*/
     max-width: 400px;
   }
 }
@@ -88,7 +88,7 @@ header {
 //! @MIXIN
 //*****************
 
-@mixin myBox($backColor, $color) {
+@mixin myBox($backColor, $color) {/*fonksiyon yazıyoruz ve parametreli yazdık parantez içi parametre parametresz de olabilir  burası deklerasyon kısmı */
   background-color: $backColor;
   color: $color;
   width: 25%;
@@ -98,11 +98,11 @@ header {
 }
 
 .cards {
-  display: flex;
-  gap: 0.5rem;
-  padding: 0.8rem;
+  display: flex;/*cardlar yan yana*/
+  gap: 0.5rem;/*cardlar arası boşluk*/
+  padding: 0.8rem;/*iç hacim*/
   .card1 {
-    @include myBox(green, white);
+    @include myBox(green, white);/*include çağırma kısmı*/
   }
   .card2 {
     @include myBox(brown, white);
@@ -118,13 +118,13 @@ header {
 //*******  ARTICLES *********/
 
 //*****************
-//! @EXTEND
-//*****************
+//! @EXTEND 
+//***************** bir klasta yazılanı baska kılaslarda çağırmak içn parametre almıyor
 
 .articles {
   display: flex;
   padding: 1rem;
-  gap: 1rem;
+  gap: 1rem; /*article aralarını açmak için*/
   .article1 {
     background-color: grey;
     width: 50%;
@@ -134,7 +134,7 @@ header {
   }
 
   .article2 {
-    @extend .article1;
+    @extend .article1; /*extend le bu şekilde article1 dekileri tekrar yazmaya gerek kalmıyor aynı olanları*/
     background-color: hotpink;
     border-color: green;
   }
@@ -166,14 +166,14 @@ footer {
   .social-icons {
     display: flex;
     height: 10rem;
-    $textColor: #990000, #55004e, #0fa8a1, #121456, #64c217;
+    $textColor: #990000, #55004e, #0fa8a1, #121456, #64c217;/*dizi rengi fonksiyonu*/
 
-    @for $i from 1 through 5 {
-      .social#{$i} {
+    @for $i from 1 through 5 {/*s1 den s5 e kadar döngü oluşturuyoruz  böylede olur  @for $i from 1 to 6 { through yaparsak 5 dahil olur*/
+      .social#{$i} {/*social sabit kısım buna i yi ata*/
         width: 20%;
-        background-color: lighten(rgba(27, 130, 219, 0.89), $i * 5);
-        font-size: $i * 1rem;
-        color: nth($textColor, $i);
+        background-color: lighten(rgba(27, 130, 219, 0.89), $i * 5);/*lighten fonksiyonu ile rengi yazdık i den 5 e kadar azalt dedik rengi $i*5 ile lighten da koyudan açıga dogru demek darken tam tersi a*/
+        font-size: $i * 1rem;/*i yi 1 rem 1 rem seklinde font size nı arttırdedik*/
+        color: nth($textColor, $i);/*nth fonksiyonu  nth textcolor fonksiyonundan sırayla $i ye atama yapıyor*/
       }
     }
   }
