@@ -151,10 +151,10 @@ header {
 //************************************************
 
 footer {
-  $dark: 2;
+  $dark: 2;/*değişken atadık */
 
   p {
-    @if $dark==1 {
+    @if $dark==1 { /* if döngüsü ile eger değişken 2 ise bu olsun vs*/
       background-color: grey;
     } @else if $dark==2 {
       background-color: lightgreen;
@@ -163,7 +163,7 @@ footer {
     }
   }
 
-  .social-icons {
+  .social-icons {/*for döngüsü ile*/
     display: flex;
     height: 10rem;
     $textColor: #990000, #55004e, #0fa8a1, #121456, #64c217;/*dizi rengi fonksiyonu*/
