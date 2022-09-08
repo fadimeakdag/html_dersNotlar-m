@@ -1,7 +1,7 @@
 //*****************
 //! @MIXIN
 //*****************
-// @import "variables";
+// @import "variables"; eski yöntem
 @use "variables" as v;
 
 @mixin myBox($backColor, $color) {

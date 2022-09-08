@@ -3,9 +3,9 @@
 //********************************************/
 
 @use "./base/reset";
-@use "./abstracts/variables" as v;
+@use "./abstracts/variables" as v;/*as ile kısaltma yapabiliriz variablayi v ile kullan demek*/
 // @import "./abstracts/colors";
-@use "./components/index" as *;
+@use "./components/index" as *;/*hepsini import et indexs scssdeki*/
 
 body {
   font-family: v.$fontFamily;
